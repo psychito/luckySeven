@@ -1,18 +1,11 @@
 <?php
-/**
- * @package     Joomla.Site
- * @subpackage  Templates.protostar
- *
- * @copyright   Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 /** @var JDocumentHtml $this */
 
 $app  = JFactory::getApplication();
 $user = JFactory::getUser();
+$lang = JFactory::getLanguage();
 
 // Output as HTML5
 $this->setHtml5(true);
@@ -22,7 +15,6 @@ JHtml::_('script', 'template.js', array('version' => 'auto', 'relative' => true)
 JHtml::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true, 'conditional' => 'lt IE 9'));
 JHtml::_('stylesheet', 'siete.css', array('version' => 'auto', 'relative' => true));
 JHtml::_('stylesheet', '//fonts.googleapis.com/css?family=Lato:300,400,900');
-$doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $this->addStyleDeclaration("h1, h2, h3, h4, h5, h6, .site-title {	font-family: Lato, sans-serif;
 }");
 ?>
@@ -79,9 +71,8 @@ $this->addStyleDeclaration("h1, h2, h3, h4, h5, h6, .site-title {	font-family: L
 			</div>
 		</div>
 		</header>
-		<?php $menu = &JSite::getMenu();
-       if ($menu->getActive() = $menu->getDefault()) {
-?>
+		<?php $menu = $app->getMenu();
+if ($menu->getActive() == $menu->getDefault($lang->getTag())) {?>
 <section class="frontpagecont">
 <div class="row-fluid slidercont">
 	<div class="span12 slider">

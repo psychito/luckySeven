@@ -7,7 +7,7 @@
 	<author>Alexander Urbina</author>
 	<authorEmail>alexanderurbinac@gmail.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>TPL_LUCKYSEVEN_XML_DESCRIPTION</description>
+	<description>Tema desarrollado para SIETE</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
@@ -48,7 +48,7 @@
 		<position>lsev-contbottom</position>
 	</positions>
 	<languages folder="language">
-		<language tag="es">es/es.tpl_luckyseven.ini</language>
-		<language tag="es">es/es.tpl_lucckyseven.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_luckyseven.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_lucckyseven.sys.ini</language>
 	</languages>
 </extension>
