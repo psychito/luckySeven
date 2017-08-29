@@ -48,7 +48,7 @@
 		<position>lsev-contbottom</position>
 	</positions>
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_luckyseven.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_lucckyseven.sys.ini</language>
+		<language tag="es">es/es.tpl_luckyseven.ini</language>
+		<language tag="es">es/es.tpl_lucckyseven.sys.ini</language>
 	</languages>
 </extension>
