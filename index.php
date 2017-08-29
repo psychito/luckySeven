@@ -6,6 +6,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 $app  = JFactory::getApplication();
 $user = JFactory::getUser();
 $lang = JFactory::getLanguage();
+$sitename = $app->get('sitename');
 
 // Output as HTML5
 $this->setHtml5(true);
@@ -30,13 +31,14 @@ $this->addStyleDeclaration("h1, h2, h3, h4, h5, h6, .site-title {	font-family: L
 <body>
 
 <div class="completo">
-	<div class="container-fluid">
+	<div class="anchototal container-fluid">
 	<header>
 		<div class="row-fluid topper">
-			<div class="span3">
-				<jdoc:include type="modules" name="lsev-fecha" style="none" />
+			<div class="span5 fecha">
+				<?php
+				echo '<span>'.JFactory::getDate()->format('l, d F').' de '.JFactory::getDate()->format('Y').'</span>'?>
 			</div>
-			<div class="span3 offset6">
+			<div class="span5 offset2">
 				<jdoc:include type="modules" name="lsev-buscador" style="none" />
 			</div>
 		</div>
